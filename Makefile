@@ -15,7 +15,7 @@ OBJS = \
 	picirq.o\
 	pipe.o\
 	proc.o\
-	procfs.o\
+	procfs.o\   ## new in line 18 & 170
 	sleeplock.o\
 	spinlock.o\
 	string.o\
