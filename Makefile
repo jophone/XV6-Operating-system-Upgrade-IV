@@ -15,7 +15,7 @@ OBJS = \
 	picirq.o\
 	pipe.o\
 	proc.o\
-	procfs.o\
+	procfs.o\  #new!!  line 18 & 170
 	sleeplock.o\
 	spinlock.o\
 	string.o\
@@ -167,7 +167,7 @@ mkfs: mkfs.c fs.h
 .PRECIOUS: %.o
 
 UPROGS=\
-	_lsnd\
+	_lsnd\  ##new!!!
 	_cat\
 	_echo\
 	_forktest\
