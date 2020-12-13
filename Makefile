@@ -166,8 +166,8 @@ mkfs: mkfs.c fs.h
 # http://www.gnu.org/software/make/manual/html_node/Chained-Rules.html
 .PRECIOUS: %.o
 
-UPROGS=\
-	_lsnd\
+UPROGS=\             	#包含所有相关的可执行文件名
+	_lsnd\		
 	_cat\
 	_echo\
 	_forktest\
