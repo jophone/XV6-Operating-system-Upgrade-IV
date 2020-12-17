@@ -133,7 +133,7 @@ brelse(struct buf *b)
     b->prev->next = b->next;
     b->next = bcache.head.next;
     b->prev = &bcache.head;
-    bcache.head.next->prev = b;
+    bcache.head.next->prev = b;  //
     bcache.head.next = b;
   }
   
