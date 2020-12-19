@@ -30,7 +30,7 @@ struct inode {
 struct devsw {
   int (*isdir)(struct inode*);    //new func
   void (*iread)(struct inode*, struct inode*);   //new func
-  int (*read)(struct inode*, char*, int, int);
+  int (*read)(struct inode*, char*, int, int);  //function pointer
   int (*write)(struct inode*, char*, int);
 };
 
