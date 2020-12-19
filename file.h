@@ -28,8 +28,8 @@ struct inode {
 // table mapping major device number to
 // device functions
 struct devsw {
-  int (*isdir)(struct inode*);
-  void (*iread)(struct inode*, struct inode*);
+  int (*isdir)(struct inode*);    //new func
+  void (*iread)(struct inode*, struct inode*);   //new func
   int (*read)(struct inode*, char*, int, int);
   int (*write)(struct inode*, char*, int);
 };
