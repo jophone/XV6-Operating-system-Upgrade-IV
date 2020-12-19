@@ -12,7 +12,7 @@ main(void)
 {
   int pid, wpid;
  
-  mknod("/proc", 2, 0);
+  mknod("/proc", 2, 0);  //create device file; refer to sys_mknod(ip,major,minor) from sysfile.c
 
   if(open("/console", O_RDWR) < 0){
     mknod("/console", 1, 1);
