@@ -48,7 +48,7 @@ int itoa(int n, char *str){
 
 int 
 procfsisdir(struct inode *ip) {
-  return ip->inum == namei("proc")->inum||ip->minor == T_DIR;
+  return ip->inum == namei("proc")->inum||ip->minor == T_DIR;   //return the inode of specified name "proc"
 }
 
 void 
