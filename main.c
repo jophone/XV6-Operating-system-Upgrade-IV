@@ -24,7 +24,7 @@ main(void)
   seginit();       // segment descriptors
   picinit();       // disable pic
   ioapicinit();    // another interrupt controller
-  procfsinit();    // procfs file system
+  procfsinit();    // procfs file system        !!new
   consoleinit();   // console hardware
   uartinit();      // serial port
   pinit();         // process table
